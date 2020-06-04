@@ -1,0 +1,28 @@
+{
+  "name": "discord-leetcode",
+  "version": "0.1.0",
+  "description": "Discord Leetcode bot",
+  "license": "MIT",
+  "esy": {
+    "build": "dune build -p #{self.name}",
+    "buildDev":
+      "refmterr dune build --promote-install-files --root . --only-package #{self.name}",
+    "NOTE": "Optional release Section. Customizes result of `esy release`",
+    "release": { "bin": [ "Main" ] }
+  },
+  "scripts": { "discord-leetcode": "esy x Main" },
+  "dependencies": {
+    "@esy-ocaml/reason": ">= 3.4.0 < 3.6.0",
+    "@opam/core": "v0.13.0",
+    "@opam/dune": "*",
+    "@opam/re": "1.9.0",
+    "@opam/yojson": "1.7.0",
+    "ocaml": "~4.8.1000",
+    "re-discord": "3.1.0-beta.1"
+  },
+  "devDependencies": {
+    "ocaml": "~4.8.1000",
+    "refmterr": "*",
+    "@opam/merlin": "*"
+  }
+}

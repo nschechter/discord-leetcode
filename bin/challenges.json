@@ -1,0 +1,30 @@
+{
+  "challenges": [
+    {
+      "id": 1,
+      "name": "Palindrome Integer",
+      "description": "Given an integer num, return whether it is a palindrome.",
+      "inputs": [
+        { "input": "121", "value": true },
+        { "input": "20200202", "value": true },
+        { "input": "44", "value": true },
+        { "input": "1337", "value": false },
+        { "input": "1110", "value": false }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Valid Parentheses",
+      "description": "Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
+      "inputs": [
+        { "input": "\"()\"", "value": true },
+        { "input": "\"()[]{}\"", "value": true },
+        { "input": "\"(]\"", "value": false },
+        { "input": "\"{[]}\"", "value": true },
+        { "input": "\"{{{[][]}}}\"", "value": true },
+        { "input": "\"{}{}{{}}{}}}\"", "value": false },
+        { "input": "\"{\"", "value": false }
+      ]
+    }
+  ]
+}
